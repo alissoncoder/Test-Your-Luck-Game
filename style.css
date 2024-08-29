@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-color: #397097
+}
+#title {
+    padding: 0px 10px;
+    margin: 50px 0px;
+    color: white;
+}
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#counter-container {
+    font-size: 30px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 30px 0px;
+    background-color: #4D7FA2;;
+}
+#box {
+    height: 300px;
+    width: 450px;
+    text-align: center;
+    border-radius: 1.5vw;
+    background-color: #4D7FA2;
+    color: rgb(255, 255, 255);
+    font-size: 60px;
+    min-width: 450px;
+    border: 1px solid white;
+}
+#spin {
+    background-color: white;
+    font-size: 50px;
+    color: #397097;
+    font-weight: bold;
+    width: auto;
+    padding: 0px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0px 5px rgb(185, 185, 185);
+}
+#spin:active {
+    box-shadow: none;
+    margin-top: 25px;
+    background-color: white;
+}
+#buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+}
+button {
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    margin: 20px 15px;
+    color: white;
+    cursor: pointer;
+}
+.win {
+    color: gold;
+    text-shadow: 0px 0px 10px rgb(199, 174, 30);
+}
+.ativo {
+    background-color: #346486;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.winAnim {
+    animation: colorAnim 1s;
+}
+@keyframes colorAnim {
+    0% {
+        color: gold;
+        font-size: 35px;
+    }
+    100% {
+        color: white;
+        font-size: 30px;
+    }
+}
